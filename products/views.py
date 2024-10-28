@@ -15,7 +15,7 @@ def product(request):
   # return HttpResponse("<h1>Products Page</h1>")
   data=Products.objects.all()
   product_form=products()
-  return render(request,'product.html',{ 'product_form':product_form})
+  return render(request,'page-blank-starter.html',{ 'product_form':product_form})
   return res
   
 
